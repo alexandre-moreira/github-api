@@ -1,13 +1,14 @@
 import React from "react";
 import Layout from "./components/layout";
+import Profile from "./components/profile";
+import { ResetCSS } from "./global/resetCSS";
 
-function App() {
+const App = () => {
   return (
     <main>
+      <ResetCSS />
       <Layout>
-        <div>User</div>
-        <div>Repositories</div>
-        <div>Starreds</div>
+        <Profile />
       </Layout>
     </main>
   );
